@@ -39,7 +39,7 @@ Finally, run the installation script:
 
 - installing [rbenv](https://github.com/sstephenson/rbenv);
 
-- installing various **[rbenv](https://github.com/sstephenson/rbenv) plugins:
+- installing various [rbenv](https://github.com/sstephenson/rbenv) plugins:
     - [ruby-build](https://github.com/sstephenson/ruby-build)
     - [rbenv-binstubs](https://github.com/ianheggie/rbenv-binstubs)
     - [rbenv-gem-rehash](https://github.com/sstephenson/rbenv-gem-rehash)
