@@ -15,12 +15,12 @@ class AppConfigurator
   end
 
   def configure
-    # create_app_directories
-    # create_shared_directories
-    # create_rails_yml_files
-    # configure_puma_upstart
+    create_app_directories
+    create_shared_directories
+    create_rails_yml_files
+    configure_puma_upstart
     configure_nginx
-    # install_ruby
+    install_ruby
   end
 
   private
