@@ -4,18 +4,19 @@ Couple of scripts for easy (Rails + Puma + Nginx) server setup.
 
 ---
 
-## Install ##
+## Usage ##
 
-Navigate to home directory and download the script:
+### Installing dependencies ###
+Clone the repo to you home directory:
 
 ```
-cd
-wget https://raw.githubusercontent.com/toschaslabs/pronto/master/install.sh
+git clone https://github.com/toschaslabs/pronto ~/pronto
 ```
 
 Make the script executable by running:
 
 ```
+cd ~/pronto
 chmod +x ./install.sh
 ```
 
@@ -24,8 +25,25 @@ Finally, run the installation script:
 ```
 ./install.sh
 ```
-
 ---
+
+### Assumptions ###
+Before running the application setup script, you should be aware of some assumptions that `app_setup.rb` script makes:
+
+- you are deploying Rails **API** application and **separate** client application;
+
+- you are using **Capistrano** for deploying Rails application;
+
+- you are planning to use upstart [jungle-tools](https://github.com/puma/puma/tree/master/tools/jungle/upstart) for managing Puma.
+
+### Running the setup script ###
+
+```
+cd ~/pronto
+ruby app_setup.rb
+```
+
+
 
 ## Details ##
 
@@ -54,4 +72,3 @@ Finally, run the installation script:
 
 ## License ##
 Pronto is free software, and may be redistributed under the terms specified in the [LICENSE](https://github.com/toschaslabs/pronto/blob/master/LICENSE) file.
-
